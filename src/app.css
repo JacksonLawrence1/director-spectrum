@@ -1,0 +1,20 @@
+/* Write your global styles here, in PostCSS syntax */
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply bg-white antialiased dark:bg-gray-900 dark:text-gray-400;
+}
+
+.text {
+	@apply text-gray-500 dark:text-gray-400;
+}
+
+.btn {
+	@apply rounded-lg text-gray-500 
+	hover:bg-gray-100 hover:text-gray-900
+	focus:outline-none focus:ring-0 
+	dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white;
+}
