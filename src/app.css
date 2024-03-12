@@ -4,8 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	@apply bg-white antialiased dark:bg-gray-900 dark:text-gray-400;
+	@apply scroll-smooth bg-white antialiased dark:bg-gray-900 dark:text-gray-400;
 }
 
 .text {

@@ -1,1 +1,10 @@
-<h1 class="mt-32 text-center font-light">This is a test</h1>
+<script>
+	import About from './About.svelte';
+	import Diagram from './diagram/Diagram.svelte';
+</script>
+
+<div class="flex flex-col gap-10" id="content">
+	<Diagram />
+
+	<About />
+</div>
