@@ -1,25 +1,28 @@
 <script lang="ts">
+	import { Button } from 'flowbite-svelte';
+
 	export let size: 'sm' | 'md' | 'lg' = 'sm';
-	export let number: string = '';
 	export let text: string = '';
 	export let end: boolean = false;
+	export let id: number;
+
+	export let changeDirector: (id: number) => void;
 </script>
 
-<div class="flex items-center gap-2 pr-2 pb-8">
+<div class="flex items-center gap-2 pb-8 pr-2">
 	<div class="flex flex-col items-center">
-		{#if number !== ''}
-			<p class="absolute -mt-10 text-xl">{number}</p>
-		{/if}
-		{#if size === 'sm'}
-			<span class="dot size-[29px]"></span>
-		{:else if size === 'md'}
-			<span class="dot size-[49px]"></span>
-		{:else}
-			<span class="dot size-[74px]"></span>
-		{/if}
 		{#if text !== ''}
-			<p class="absolute mt-16">{text}</p>
+			<p class="absolute -mt-10">{text}</p>
 		{/if}
+		<Button class="p-0 rounded-full focus:ring-0" on:click={() => changeDirector(id)}>
+			{#if size === 'sm'}
+				<span class="dot size-[30px]"></span>
+			{:else if size === 'md'}
+				<span class="dot size-[50px]"></span>
+			{:else}
+				<span class="dot size-[75px]"></span>
+			{/if}
+		</Button>
 	</div>
 
 	{#if !end}

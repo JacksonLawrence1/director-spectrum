@@ -24,7 +24,7 @@
 		</div>
 	</div>
 	<div class="ms-auto flex items-center">
-		<IconButton tooltip name="GitHub">
+		<IconButton tooltip name="GitHub" href="https://github.com/JacksonLawrence1/director-spectrum">
 			<GithubSolid size="lg" />
 		</IconButton>
 		<DarkMode size="lg" class="btn" />
