@@ -8,7 +8,8 @@
 </script>
 
 {#if director.image}
-	<div class="flex flex-col items-center gap-8">
+	<div class="flex flex-col items-center gap-12">
+		<h1 class="text-3xl font-semibold" id="DirectorName">{director.name}</h1>
 		<div class="flex gap-8">
 			<img
 				src={director.image}
@@ -37,7 +38,7 @@
 		>
 	</div>
 {:else}
-	<p class="w-1/2 text-3xl">
+	<p class="w-1/2 text-3xl text-center">
 		Click a circle see where some of the most popular directors lie on the spectrum.
 	</p>
 {/if}

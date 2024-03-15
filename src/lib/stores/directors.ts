@@ -1,5 +1,6 @@
 export type Director = {
 	name: string;
+	title: string;
 	description?: string;
 	image?: string;
 	movies?: Movie[]; 
@@ -12,11 +13,12 @@ export type Movie = {
 };
 
 export const directors: Map<number, Director> = new Map([
-	[0, { name: 'Click a circle to start' }],
+	[0, { name: '', title: 'Click a circle to start' }],
 	[
 		1,
 		{
 			name: 'James Cameron',
+			title: 'The Blockbuster',
 			description: 'James Francis Cameron is a Canadian film director, producer, and screenwriter.',
 			image:
 				'https://upload.wikimedia.org/wikipedia/commons/f/fe/James_Cameron_by_Gage_Skidmore.jpg',
@@ -40,6 +42,7 @@ export const directors: Map<number, Director> = new Map([
 		2,
 		{
 			name: 'Christopher Nolan',
+			title: 'The Innovator',
 			description:
 				'Christopher Edward Nolan is a British-American film director, producer, and screenwriter.',
 			image:
@@ -64,6 +67,7 @@ export const directors: Map<number, Director> = new Map([
 		3,
 		{
 			name: 'Steven Spielberg',
+			title: 'The Jack-of-All-Trades',
 			description:
 				'Steven Allan Spielberg is an American film director, producer, and screenwriter.',
 			image:
@@ -88,6 +92,7 @@ export const directors: Map<number, Director> = new Map([
 		4,
 		{
 			name: 'Ingmar Bergman',
+			title: 'The Artist',
 			description: 'Ingmar Bergman was a Swedish film director, producer, and screenwriter.',
 			image:
 				'https://m.media-amazon.com/images/M/MV5BMTc4MjQwMzY0N15BMl5BanBnXkFtZTcwNTI1NTM1MQ@@._V1_.jpg',
@@ -113,6 +118,7 @@ export const directors: Map<number, Director> = new Map([
 		5,
 		{
 			name: 'Stanley Kubrick',
+			title: 'The Visionary',
 			description: 'Stanley Kubrick was an American film director, producer, and screenwriter.',
 			image: 'https://hips.hearstapps.com/hmg-prod/images/stanley-kubrick-9369672-1-402.jpg',
 			movies: [
@@ -135,6 +141,7 @@ export const directors: Map<number, Director> = new Map([
 		6,
 		{
 			name: 'Martin Scorsese',
+			title: 'The Connoisseur',
 			description: 'Martin Scorsese is an American film director, producer, and screenwriter.',
 			image:
 				'https://static01.nyt.com/images/2020/01/05/arts/05martin-scorsese3/05martin-scorsese3-videoSixteenByNineJumbo1600.jpg',
@@ -158,6 +165,7 @@ export const directors: Map<number, Director> = new Map([
 		7,
 		{
 			name: 'Quentin Tarantino',
+			title: 'The Enthusiast',
 			description: 'Quentin Tarantino is an American film director, producer, and screenwriter.',
 			image:
 				'https://upload.wikimedia.org/wikipedia/commons/0/0b/Quentin_Tarantino_by_Gage_Skidmore.jpg',

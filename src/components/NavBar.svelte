@@ -9,7 +9,7 @@
 </script>
 
 <div
-	class="absolute flex w-full items-center justify-start border border-b-2 px-8 py-2 dark:bg-gray-800"
+	class="absolute flex w-full items-center justify-start border-b-2 px-8 py-2 dark:bg-gray-800 dark:border-gray-700"
 >
 	<div class="flex flex-row items-center gap-8">
 		<Button name="Home" id="home" href="/">

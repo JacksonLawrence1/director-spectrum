@@ -3,7 +3,6 @@
 	import { directors, type Director } from '$lib/stores/directors';
 	import DirectorCard from './DirectorCard.svelte';
 
-
 	let director: Director = directors.get(0)!;
 
 	const changeDirector = (id: number) => {
@@ -12,18 +11,28 @@
 	};
 </script>
 
-<div class="flex justify-center py-4 text-center">
-	<div class="flex flex-col items-center gap-16 rounded-lg">
-		<h1 class="text-3xl">{director.name}</h1>
-		<div class="flex place-items-center">
-			<Node id={4} {changeDirector} size="md" text="Art" />
-			<Node id={5} {changeDirector} />
-			<Node id={6} {changeDirector} />
-			<Node id={2} {changeDirector} size="md" />
-			<Node id={7} {changeDirector} />
-			<Node id={3} {changeDirector} />
-			<Node id={1} {changeDirector} size="md" text="Blockbuster" end />
+<div class="flex justify-center py-4">
+	<div class="flex flex-col items-center gap-16">
+		<h1 class="text-5xl font-bold">{director.title}</h1>
+		<div class="relative flex gap-4 justify-center items-center px-28 py-16 rounded-lg border-2 dark:border-gray-700 border-gray-200">
+			<div class="flex items-center justify-center">
+				<Node id={4} {changeDirector} size="md" />
+				<Node id={5} {changeDirector} />
+				<Node id={6} {changeDirector} />
+				<Node id={3} {changeDirector} size="lg" />
+				<Node id={7} {changeDirector} />
+				<Node id={2} {changeDirector} />
+				<Node id={1} {changeDirector} size="md" end />
+			</div>
+			<p class="absolute text-right left-16">Art</p>
+			<p class="absolute text-left right-4">Commerce</p>
 		</div>
 		<DirectorCard {director} {changeDirector} />
 	</div>
 </div>
+
+<style>
+	p {
+		@apply text-lg;
+	}
+</style>
