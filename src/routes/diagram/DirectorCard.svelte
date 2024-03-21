@@ -1,44 +1,35 @@
 <script lang="ts">
-	import { type Director } from '$lib/stores/directors';
+	import { Directors } from '$lib/stores/directors';
 	import { Button } from 'flowbite-svelte';
-	import MoviePoster from './MoviePoster.svelte';
 
-	export let changeDirector: (id: number) => void;
-	export let director: Director;
+	export let changePoint: (dirId: number, id: number) => void;
+	export let directors: number[];
 </script>
 
-{#if director.image}
+{#if directors.length > 0}
 	<div class="flex flex-col items-center gap-12">
-		<h1 class="text-3xl font-semibold" id="DirectorName">{director.name}</h1>
-		<div class="flex gap-8">
-			<img
-				src={director.image}
-				alt={director.name}
-				class="size-40 rounded-lg object-cover"
-				style="object-position: 50% 20%;"
-			/>
-			<p class="w-96 p-2 text-left">{director.description}</p>
-		</div>
-		<p class="mt-4 text-xl font-semibold">Notable Filmography</p>
-		<div class="flex gap-4">
-			{#each director.movies ?? [] as movie}
-				<MoviePoster {movie} />
+		<p>Description here</p>
+		<div class="flex gap-12">
+			{#each directors.map((director) => Directors.get(director)).sort((a, b) => (a?.name || '').localeCompare(b?.name || '')) as dir}
+				{#if dir}
+					<div class="flex flex-col items-center gap-4">
+						<img
+							src={dir.image}
+							alt={dir.name}
+							class="h-32 w-32 rounded-lg object-cover"
+							style="object-position: 50% 20%"
+						/>
+						<p class="max-w-32 text-lg text-center font-semibold">{dir.name}</p>
+					</div>
+				{/if}
 			{/each}
 		</div>
-		{#if director.others}
-			<!-- joins others array with commas and replacing the last comma with "and" -->
-			<p class="mt-6 w-96">
-				Some other directors who could also fit this category include {director.others
-					.join(', ')
-					.replace(/,([^,]*)$/, ' and$1')}.
-			</p>
-		{/if}
-		<Button name="Reset" color="red" class="mt-8 w-min" on:click={() => changeDirector(0)}
+		<Button name="Reset" color="red" class="mt-8 w-min" on:click={() => changePoint(0, 0)}
 			>Reset</Button
 		>
 	</div>
 {:else}
-	<p class="w-1/2 text-3xl text-center">
+	<p class="w-1/2 text-center text-3xl">
 		Click a circle see where some of the most popular directors lie on the spectrum.
 	</p>
 {/if}

@@ -3,23 +3,27 @@
 
 	export let size: 'sm' | 'md' | 'lg' = 'sm';
 	export let end: boolean = false;
+	export let dirId: number;
+	export let selected: boolean = false;
 	export let id: number;
 
-	export let changeDirector: (id: number) => void;
+	function getSize(): string {
+		switch (size) {
+			case 'md':
+				return '50px';
+			case 'lg':
+				return '70px';
+			default:
+				return '30px';
+		}
+	}
+
+	export let changePoint: (dirId: number, id: number) => void;
 </script>
 
 <div class="flex size-max items-center gap-2 pr-2">
-	<Button
-		class="rounded-full p-0 focus:ring-0"
-		on:click={() => changeDirector(id)}
-	>
-		{#if size === 'sm'}
-			<span class="dot size-[30px]"></span>
-		{:else if size === 'md'}
-			<span class="dot size-[50px]"></span>
-		{:else}
-			<span class="dot size-[75px]"></span>
-		{/if}
+	<Button class="group rounded-full p-0 focus:ring-0" on:click={() => changePoint(dirId, id)}>
+		<span class="dot size-[{getSize()}] {selected ? 'ring-4' : ''}"></span>
 	</Button>
 
 	{#if !end}
@@ -27,11 +31,11 @@
 	{/if}
 </div>
 
-<style>
+<style lang="postcss">
 	.dot {
 		@apply rounded-full bg-gray-500 
         transition-all ease-in-out 
-        hover:scale-125 hover:cursor-pointer
+        hover:cursor-pointer hover:scale-125
         hover:bg-gray-900 dark:bg-gray-400 dark:hover:bg-white;
 	}
 </style>
