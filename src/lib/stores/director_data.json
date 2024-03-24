@@ -1,0 +1,350 @@
+{
+    "directors": [
+        {
+            "id": 1,
+            "name": "James Cameron",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/James_Cameron_by_Gage_Skidmore.jpg",
+            "movies": [
+                "Aliens",
+                "Avatar",
+                "Titanic"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Christopher Nolan",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Christopher_Nolan_Cannes_2018.jpg",
+            "movies": [
+                "Oppenheimer",
+                "Inception",
+                "The Dark Knight"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Steven Spielberg",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTY1NjAzNzE1MV5BMl5BanBnXkFtZTYwNTk0ODc0._V1_.jpg",
+            "movies": [
+                "Jaws",
+                "Jurassic Park",
+                "Schindler's List"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Ingmar Bergman",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTc4MjQwMzY0N15BMl5BanBnXkFtZTcwNTI1NTM1MQ@@._V1_.jpg",
+            "movies": [
+                "Fanny And Alexander",
+                "Persona",
+                "The Seventh Seal"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Stanley Kubrick",
+            "image": "https://hips.hearstapps.com/hmg-prod/images/stanley-kubrick-9369672-1-402.jpg",
+            "movies": [
+                "2001: A Space Odyssey",
+                "A Clockwork Orange",
+                "The Shining"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Martin Scorsese",
+            "image": "https://static01.nyt.com/images/2020/01/05/arts/05martin-scorsese3/05martin-scorsese3-videoSixteenByNineJumbo1600.jpg",
+            "movies": [
+                "Goodfellas",
+                "Raging Bull",
+                "Taxi Driver"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "The Russo Brothers",
+            "image": "https://media1.clevescene.com/clevescene/imager/u/original/31167556/grlor71w-450x626.jpeg",
+            "movies": [
+                "Avengers: Endgame",
+                "Avengers: Infinity War",
+                "Captain America: The Winter Soldier"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Quentin Tarantino",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Quentin_Tarantino_by_Gage_Skidmore.jpg",
+            "movies": [
+                "Pulp Fiction",
+                "Reservoir Dogs",
+                "Kill Bill"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Apitchatpong Weerasethakul",
+            "image": "https://cdn.britannica.com/75/223175-050-BE657121/Thai-film-director-Apichatpong-Weerasethakul-2018.jpg",
+            "movies": [
+                "Uncle Boonmee Who Can Recall His Past Lives",
+                "Tropical Malady",
+                "Memoria"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Alfred Hitchcock",
+            "image": "https://images.mubicdn.net/images/cast_member/1163/cache-3-1337541407/image-w856.jpg",
+            "movies": [
+                "Psycho",
+                "Rear Window",
+                "Vertigo"
+            ]
+        },
+        {
+            "id": 11,
+            "name": "David Lynch",
+            "image": "https://resizing.flixster.com/kNzUx8h2UHjHxAw4ETT9qwdEC1k=/300x300/v2/http://media.baselineresearch.com/images/198693/198693_full.jpg",
+            "movies": [
+                "Mulholland Drive",
+                "Blue Velvet",
+                "Eraserhead"
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Ridley Scott",
+            "image": "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/1575_v9_bb.jpg",
+            "movies": [
+                "Blade Runner",
+                "Alien",
+                "The Martian"
+            ]
+        },
+        {
+            "id": 13,
+            "name": "David Fincher",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTc1NDkwMTQ2MF5BMl5BanBnXkFtZTcwMzY0ODkyMg@@._V1_.jpg",
+            "movies": [
+                "Fight Club",
+                "Seven",
+                "The Social Network"
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Spike Lee",
+            "image": "https://cdn.britannica.com/04/113304-050-F9162580/Spike-Lee-2007.jpg",
+            "movies": [
+                "Do the Right Thing",
+                "BlacKkKlansman",
+                "Malcolm X"
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Francis Ford Coppola",
+            "image": "https://faroutmagazine.co.uk/static/uploads/1/2023/04/Francis-Ford-Coppola-Director.jpg",
+            "movies": [
+                "The Godfather",
+                "Apocalypse Now",
+                "The Conversation"
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Guillermo del Toro",
+            "image": "https://cdn.britannica.com/49/198849-050-CA5613DE/Guillermo-del-Toro-2017.jpg",
+            "movies": [
+                "Pan's Labyrinth",
+                "The Shape of Water",
+                "Crimson Peak"
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Ang Lee",
+            "image": "https://static.wikia.nocookie.net/oscars/images/c/c3/AngLee2.jpg",
+            "movies": [
+                "Crouching Tiger, Hidden Dragon",
+                "Brokeback Mountain",
+                "Hulk"
+            ]
+        },
+        {
+            "id": 18,
+            "name": "Bong Joon-ho",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Bong_Joon-ho_2017.jpg/1200px-Bong_Joon-ho_2017.jpg",
+            "movies": [
+                "Parasite",
+                "Snowpiercer",
+                "Memories of Murder"
+            ]
+        },
+        {
+            "id": 19,
+            "name": "Park Chan-wook",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTgyODk3MTU5OV5BMl5BanBnXkFtZTcwMTc3NjcyMQ@@._V1_.jpg",
+            "movies": [
+                "Oldboy",
+                "The Handmaiden",
+                "Decision to Leave"
+            ]
+        },
+        {
+            "id": 20,
+            "name": "Paul Thomas Anderson",
+            "image": "https://media.gq.com/photos/5a383d755f1f364364dd40f9/1:1/w_2000,h_2000,c_limit/P.T.%20Anderson-01.jpg",
+            "movies": [
+                "There will be Blood",
+                "Boogie Nights",
+                "Phantom Thread"
+            ]
+        },
+        {
+            "id": 21,
+            "name": "Wes Andeson",
+            "image": "https://hips.hearstapps.com/hmg-prod/images/wes-anderson-20617561-1-402.jpg",
+            "movies": [
+                "The Grand Budapest Hotel",
+                "Fantastic Mr Fox",
+                "Asteroid City"
+            ]
+        },
+        {
+            "id": 22,
+            "name": "J.J. Abrams",
+            "image": "https://www.onthisday.com/images/people/j-j-abrams.jpg?w=360",
+            "movies": [
+                "Star Wars: The Force Awakens",
+                "Star Trek",
+                "Mission Impossible III"
+            ]
+        },
+        {
+            "id": 23,
+            "name": "Peter Jackson",
+            "image": "https://ew.com/thmb/_9WvfNY_KSOKkc-V0rTHhI5-KNI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/peter-jackson_320-1-64ae14286b814c318beaab15d8d4087d.jpg",
+            "movies": [
+                "The Lord of the Rings Trilogy",
+                "The Hobbit Trilogy",
+                "King Kong"
+            ]
+        },
+        {
+            "id": 24,
+            "name": "George Lucas",
+            "movies": [
+                "Star Wars IV: A New Hope",
+                "American Graffiti",
+                "THX 1138"
+            ]
+        },
+        {
+            "id": 25,
+            "name": "Tim Burton",
+            "movies": [
+                "Edward Scissorhands",
+                "Beetlejuice",
+                "Batman"
+            ]
+        },
+        {
+            "id": 26,
+            "name": "Michael Bay",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Michael.bay.png",
+            "movies": [
+                "Transformers",
+                "Armageddon",
+                "Bad Boys"
+            ]
+        },
+        {
+            "id": 27,
+            "name": "Denis Villeneuve",
+            "image": "https://m.media-amazon.com/images/M/MV5BMzU2MDk5MDI2MF5BMl5BanBnXkFtZTcwNDkwMjMzNA@@._V1_.jpg",
+            "movies": [
+                "Dune",
+                "Prisoners",
+                "Blade Runner 2049"
+            ]
+        },
+        {
+            "id": 28,
+            "name": "Andrei Tarkovsky",
+            "image": "https://images.mubicdn.net/images/cast_member/1039/cache-4-1337461025/image-w856.jpg?size=800x",
+            "movies": [
+                "Stalker",
+                "Solaris",
+                "Mirror"
+            ]
+        },
+        {
+            "id": 29,
+            "name": "Yorgos Lanthimos",
+            "movies": [
+                "The Favourite",
+                "The Lobster",
+                "Poor Things"
+            ]
+        },
+        {
+            "id": 30,
+            "name": "Alfonso Cuaron",
+            "image": "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/74161_v9_bb.jpg",
+            "movies": [
+                "Children of Men",
+                "Roma",
+                "Harry Potter and the Prisoner of Azkaban"
+            ]
+        },
+        {
+            "id": 31,
+            "name": "The Coen Brothers",
+            "movies": [
+                "No Country for Old",
+                "Fargo",
+                "The Big Lebowski"
+            ]
+        },
+        {
+            "id": 32,
+            "name": "Sam Raimi",
+            "image": "https://media.themoviedb.org/t/p/w500/8gssvwiPrFRuFRlr5ruKx68k1Jl.jpg",
+            "movies": [
+                "The Evil Dead",
+                "Spider-Man",
+                "Army of Darkness"
+            ]
+        },
+        {
+            "id": 33,
+            "name": "Jordan Peele",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/3/30/Jordan_Peele_Peabody_2014_%28cropped%29.jpg",
+            "movies": [
+                "Get Out",
+                "Us",
+                "Nope"
+            ]
+        },
+        {
+            "id": 34,
+            "name": "Charlie Chaplin",
+            "image": "https://images.immediate.co.uk/production/volatile/sites/7/2018/01/Charlie-Chaplin-1e7d4e4.jpg",
+            "movies": [
+                "The Great Dictator",
+                "City Lights",
+                "Modern Times"
+            ]
+        },
+        {
+            "id": 35,
+            "name": "Sidney Lumet",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTY4Mzk5Mzk4Ml5BMl5BanBnXkFtZTYwMTE2NDg0._V1_.jpg",
+            "movies": [
+                "12 Angry Men",
+                "Dog Day Afternoon",
+                "Serpico"
+            ]
+        }
+    ]
+}

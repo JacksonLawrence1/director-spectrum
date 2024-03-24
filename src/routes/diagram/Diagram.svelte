@@ -6,23 +6,23 @@
 	let point: Point = Points.get(0)!;
 	let selected: number = 0;
 
-	const changePoint = (pointId: number, componentId: number) => {
+	const changePoint = (id: number) => {
 		// if id not found then use default 0 which is always set
-		point = Points.get(pointId) || Points.get(0)!; 
-		selected = componentId;
+		point = Points.get(id) || Points.get(0)!; 
+		selected = id;
 	};
 
 </script>
 
 <div class="flex justify-center py-4">
 	<div class="flex flex-col items-center gap-16">
-		<h1 class="text-5xl font-bold">{point.title}</h1>
+		<h1 class="text-3xl sm:text-5xl font-bold">{point.title}</h1>
 		<div class="relative flex gap-4 justify-center items-center px-28 py-16 rounded-lg border-2 dark:border-gray-700 border-gray-200">
 			<NodeGroup bind:selected {changePoint} />
 			<p class="absolute text-right left-16">Art</p>
 			<p class="absolute text-left right-4">Commerce</p>
 		</div>
-		<DirectorCard directors={point.directors} {changePoint} />
+		<DirectorCard {...point} {changePoint} />
 	</div>
 </div>
 

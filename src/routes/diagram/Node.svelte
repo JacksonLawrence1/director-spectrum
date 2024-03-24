@@ -3,27 +3,26 @@
 
 	export let size: 'sm' | 'md' | 'lg' = 'sm';
 	export let end: boolean = false;
-	export let dirId: number;
 	export let selected: boolean = false;
 	export let id: number;
 
 	function getSize(): string {
 		switch (size) {
 			case 'md':
-				return '50px';
+				return 'size-[50px]';
 			case 'lg':
-				return '70px';
+				return 'size-[70px]';
 			default:
-				return '30px';
+				return 'size-[30px]';
 		}
 	}
 
-	export let changePoint: (dirId: number, id: number) => void;
+	export let changePoint: (id: number) => void;
 </script>
 
 <div class="flex size-max items-center gap-2 pr-2">
-	<Button class="group rounded-full p-0 focus:ring-0" on:click={() => changePoint(dirId, id)}>
-		<span class="dot size-[{getSize()}] {selected ? 'ring-4' : ''}"></span>
+	<Button class="group rounded-full p-0 focus:ring-0" on:click={() => changePoint(id)}>
+		<span class="dot {getSize()} {selected ? "ring-4" : ""}"></span>
 	</Button>
 
 	{#if !end}
