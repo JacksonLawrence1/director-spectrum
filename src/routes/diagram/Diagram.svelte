@@ -16,10 +16,10 @@
 
 <div class="flex justify-center py-4">
 	<div class="flex flex-col items-center gap-16">
-		<h1 class="text-3xl sm:text-5xl font-bold">{point.title}</h1>
-		<div class="relative flex gap-4 justify-center items-center px-28 py-16 rounded-lg border-2 dark:border-gray-700 border-gray-200">
+		<h1 class="text-3xl sm:text-5xl poppins-semibold">{point.title}</h1>
+		<div class="relative flex gap-4 justify-center items-center pr-32 pl-24 py-16 rounded-lg border-2 dark:border-gray-700 border-gray-200">
 			<NodeGroup bind:selected {changePoint} />
-			<p class="absolute text-right left-16">Art</p>
+			<p class="absolute text-right left-10">Art</p>
 			<p class="absolute text-left right-4">Commerce</p>
 		</div>
 		<DirectorCard {...point} {changePoint} />

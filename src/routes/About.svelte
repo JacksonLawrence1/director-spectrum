@@ -7,11 +7,11 @@
 		</p>
 		<div class="flex flex-col self-center lg:w-1/2 gap-12 my-6 py-8 px-6 dark:bg-gray-800 bg-gray-200 rounded-lg">
 			<h2>
-				The <b>left end</b> generally make movies as an art form, with a focus
-				on symbolism and visual storytelling.
+				The <b>left end</b> emphasises art, with of focus on
+				symbolism and visual storytelling.
 			</h2>
 			<h2>
-				The <b>right end</b> generally make movies as entertainment, with a 
+				The <b>right end</b> emphasises entertainment, with a
 				focus on appealing to a large audience.
 			</h2>
 		</div>
@@ -25,9 +25,9 @@
 
 <style lang="postcss">
 	p {
-		@apply lg:w-1/2 self-center text-lg;
+		@apply lg:w-1/2 self-center;
 	}
 	h2 {
-		@apply text-center text-2xl text-gray-900 dark:text-white;
+		@apply text-center text-xl text-gray-900 dark:text-white;
 	}
 </style>
