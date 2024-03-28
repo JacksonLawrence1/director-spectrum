@@ -1,17 +1,11 @@
 <a name="readme-top"></a>
 
-<br />
-<div align="center">
-  <h3 align="center">The Director Spectrum</h3>
+## The Director Spectrum
+A showcase of how some of the most popular film makers can be modelled across a spectrum. 
 
-  <p align="center">
-    A showcase of how some of the most popular film makers can be modelled across a spectrum. 
-    <br />
-    <a href="https://thedirectorspectrum.vercel.app/"><strong>View Online »</strong></a>
-  </p>
-</div>
+<a href="https://thedirectorspectrum.vercel.app/"><strong>View Online »</strong></a>
 
-### Built With
+## Built With
 [![Svelte]][Svelte-url]
 [![TailwindCSS]][TailwindCSS-url]
 
